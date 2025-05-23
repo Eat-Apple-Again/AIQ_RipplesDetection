@@ -138,5 +138,10 @@ The ripple detection service is located in the `ripples_api` folder. To run it:
 # Try it
 http://localhost:3000
 
+# My Paper
+雲端智慧投餌系統：使用知識蒸餾、水花偵測技術評估餵食強度的跨場域設計  
+Cloud-Based Smart Fish-Feeding Systems: A Design for Cross-Pond Evaluation of Feeding Intensity Through Knowledge Distillation and Fish Ripples Detection Technology  
+[Read the paper](https://hdl.handle.net/11296/8hdk47)
+
 # Demo
 [![Demo Video](https://img.youtube.com/vi/8bzHJ8E2kgE/0.jpg)](https://youtu.be/8bzHJ8E2kgE)
