@@ -17,7 +17,7 @@ else:
 print(f"using device: {device}")
 
 # The SegFormer weights which are knowledge distillation from SAM
-weight_dir = "/Users/eatappleagain/trial/RipplesDetection/ripples_api/app/resource/state_dict/segformer_data_size_300.pth"
+weight_dir = "AgentIQ/ripples_api/app/resource/state_dict/segformer_data_size_300.pth"
 
 # Definition of my SegFormer
 class MySegFormer_0409(nn.Module):

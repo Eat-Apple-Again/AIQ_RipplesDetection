@@ -13,7 +13,7 @@ from .segmentation import MySegFormer_0409
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # The SegFormer weights which are knowledge distillation from SAM
-weight_dir = "/Users/eatappleagain/trial/RipplesDetection/ripples_api/app/resource/state_dict/segformer_data_size_300.pth"
+weight_dir = "AgentIQ/ripples_api/app/resource/state_dict/segformer_data_size_300.pth"
 device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
 
 model = MySegFormer_0409(num_classes=2, backbone="b0")
