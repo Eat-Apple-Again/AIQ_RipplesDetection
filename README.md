@@ -36,7 +36,7 @@ This repository demonstrates how to deploy NVIDIA AIQToolkit in a Docker contain
 1. **Activate the Python Environment**
 
    ```bash
-   cd AgentIQ
+   cd AIQ_RipplesDetection
    source .venv/bin/activate
    ```
 
@@ -101,7 +101,7 @@ NEXT_PUBLIC_HTTP_CHAT_COMPLETION_URL=http://<HOST_IP>:8888/chat/stream
 ### Launch the Frontend
 
 ```bash
-cd AgentIQ/external/aiqtoolkit-opensource-ui
+cd AIQ_RipplesDetection/external/aiqtoolkit-opensource-ui
 npm install
 npm run dev
 ```

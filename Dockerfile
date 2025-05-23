@@ -22,7 +22,7 @@ ENV PATH="/root/.local/bin:${PATH}"
 
 # 7. Create workspace and clone AIQToolkit
 WORKDIR /home
-RUN git clone https://github.com/Eat-Apple-Again/AIQToolkit.git AgentIQ && \
+RUN git clone https://github.com/Eat-Apple-Again/AIQ_RipplesDetection.git AgentIQ && \
     cd AgentIQ && \
     git submodule update --init --recursive && \
     git lfs fetch && git lfs pull
