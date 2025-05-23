@@ -137,3 +137,6 @@ The ripple detection service is located in the `ripples_api` folder. To run it:
 ---
 # Try it
 http://localhost:3000
+
+# Demo
+[![Demo Video](https://img.youtube.com/vi/8bzHJ8E2kgE/0.jpg)](https://youtu.be/8bzHJ8E2kgE)
