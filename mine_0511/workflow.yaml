@@ -1,0 +1,37 @@
+functions:
+  wikipedia_search:
+    _type: wiki_search
+    max_results: 2
+  get_current_status:
+    _type: mcp_tool_wrapper
+    url: "http://host.docker.internal:8005/mcp"
+    mcp_tool_name: "current_status_detect_current_status_get"
+    description: |
+      data path is /Users/eatappleagain/trial/data/FT/ar0DB/frames_test
+      Get ripple pixel counts of the latest feeding frame and return fish appetite level result.
+  get_past_status:
+    _type: mcp_tool_wrapper
+    url: "http://host.docker.internal:8005/mcp"
+    mcp_tool_name: "past_status_detect_past_status_get"
+    description: |
+      data path is /Users/eatappleagain/trial/data/FT/ar0DB/frames_test
+      Get ripple pixel counts for all feeding frames and return JSON, trendline chart, and heatmap paths.
+
+llms:
+  nim_llm:
+    _type: nim
+    model_name: meta/llama-3.1-70b-instruct
+    temperature: 0.0
+    api_key: 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
+  
+workflow:
+  _type: react_agent
+  tool_names: [
+    wikipedia_search,
+    get_current_status,
+    get_past_status,
+  ]
+  llm_name: nim_llm
+  verbose: true
+  retry_parsing_errors: true
+  max_retries: 3
